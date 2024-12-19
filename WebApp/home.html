@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Codeswipe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="home.js" defer></script>
+</head>
+<body>
+    <nav>
+        <button onclick="toggleMenu()">☰</button>
+        <div id="navMenu" class="hidden">
+            <a href="home.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="chat.html">Chat</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </div>
+    </nav>
+
+    <div class="profile-card">
+        <h2 id="name"></h2>
+        <p id="techStack"></p>
+        <p id="favoriteProject"></p>
+        <div class="code-snippet" id="codeSnippet"></div>
+        <div>
+            <button onclick="swipe('right')">Swipe Right</button>
+            <button onclick="swipe('left')">Swipe Left</button>
+        </div>
+    </div>
+</body>
+</html>

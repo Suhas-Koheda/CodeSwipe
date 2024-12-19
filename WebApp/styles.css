@@ -1,0 +1,183 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1E1E1E; /* Dark background */
+    background-image: linear-gradient(62deg, #1E1E1E 0%, #2A2A2A 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333; /* Dark grey/nav bar */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: #00BFFF; /* Light blue */
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+nav button:hover {
+    color: #1E90FF; /* Blue on hover */
+}
+
+#navMenu {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: #333;
+    color: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    display: none;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.hidden {
+    display: none;
+}
+
+#navMenu:not(.hidden) {
+    display: flex;
+}
+
+#navMenu a {
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+#navMenu a:hover {
+    background-color: #555;
+}
+
+/* Profile Card */
+.profile-card {
+    background: rgba(0, 0, 0, 0.85); /* Dark background with opacity */
+    backdrop-filter: blur(20px); /* Clearer content with a stronger blur */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8); /* Darker, more prominent shadow */
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+    color: #00BFFF; /* Brighter blue text for contrast */
+    border: 1px solid #444; /* Slight border for definition */
+}
+
+.profile-card h2,
+.profile-card p {
+    color: #00BFFF; /* Brighter blue for text */
+}
+
+/* Chat Section */
+.chat-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 900px; /* Constrain content width */
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Chat Box */
+.chat-box {
+    background-color: rgba(0, 0, 0, 0.85); /* Semi-transparent black */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
+    color: #00BFFF; /* Brighter blue text for better visibility */
+    width: 100%;
+    max-height: 70vh; /* Limit chat box height */
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+/* Individual chat messages */
+.chat-message {
+    background-color: #333; /* Dark grey message background */
+    color: #f0f0f0; /* Light text for readability */
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    max-width: 80%; /* Limit width of message */
+    word-wrap: break-word;
+}
+
+.chat-message.user {
+    background-color: #1E90FF; /* Blue for user messages */
+    color: white;
+    align-self: flex-end;
+}
+
+/* Hover effects for messages */
+.chat-message:hover {
+    background-color: #444; /* Slightly lighter background on hover */
+}
+
+/* Chat Input */
+.chat-input {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.chat-input input {
+    background-color: #333;
+    color: white;
+    width: 85%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+}
+
+.chat-input button {
+    background-color: #00BFFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #1E90FF;
+}
