@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.activity.ComponentActivity
 import com.codeswipe.codeswipe.Auth.ActivityLogin
+import com.codeswipe.codeswipe.Auth.ActivitySignup
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,6 +16,9 @@ class MainActivity : ComponentActivity() {
         loginButton.setOnClickListener {
             val intent = Intent(this, ActivityLogin::class.java)
             startActivity(intent)
+        }
+        findViewById<Button>(R.id.btn_signup).setOnClickListener{
+            startActivity(Intent(this,ActivitySignup::class.java))
         }
     }
 }

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "219656207620",
+    "project_id": "codespace-5c956",
+    "storage_bucket": "codespace-5c956.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219656207620:android:3df3585d2aca53c031e451",
+        "android_client_info": {
+          "package_name": "com.codeswipe.codeswipe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUSW0Sn-HK6XbcSOckSNkdAdTsBFl3rl4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
