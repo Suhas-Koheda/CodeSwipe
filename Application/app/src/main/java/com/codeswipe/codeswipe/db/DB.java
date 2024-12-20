@@ -14,7 +14,7 @@ import java.util.List;
 
 public class DB {
 
-    private static final String CONNECTION_STRING = "mongodb://spamsharmask:skqwerty@test.zt5blxl.mongodb.net/test?retryWrites=true&w=majority&connectTimeoutMS=30000&socketTimeoutMS=30000";
+    private static final String CONNECTION_STRING = "mongodb://:@test.zt5blxl.mongodb.net/test?retryWrites=true&w=majority&connectTimeoutMS=30000&socketTimeoutMS=30000";
     private static final String DATABASE_NAME = "UserData";
     private static MongoClient mongoClient;
     private static MongoDatabase database;
