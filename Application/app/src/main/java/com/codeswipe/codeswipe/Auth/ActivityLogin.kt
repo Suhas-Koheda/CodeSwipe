@@ -37,7 +37,13 @@ class ActivityLogin : ComponentActivity() {
                     .addOnSuccessListener { result ->
                         for (document in result) {
                             if (document.data["username"] == un && document.data["password"] == ps) {
-                                startActivity(Intent(this, HomeActivity::class.java))
+                                val intent=Intent(this,HomeActivity::class.java)
+                                intent.putExtra("username",un)
+                                Toast.makeText(this, "User $un logged in successfully", Toast.LENGTH_SHORT).show()
+                                startActivity(intent)
+                            }
+                            else{
+                                Toast.makeText(this, "Invalid Credentials for user $un", Toast.LENGTH_SHORT).show()
                             }
                         }
                     }

@@ -57,7 +57,9 @@ class ActivitySignup : ComponentActivity() {
                 .set(userData)
                 .addOnSuccessListener {
                     Toast.makeText(this, "User $username added to database successfully", Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this,HomeActivity::class.java))
+                    val intent=Intent(this,HomeActivity::class.java)
+                    intent.putExtra("username",username)
+                    startActivity(intent)
                 }
                 .addOnFailureListener { e ->
                     Toast.makeText(this, "Error: ${e.message}", Toast.LENGTH_SHORT).show()
